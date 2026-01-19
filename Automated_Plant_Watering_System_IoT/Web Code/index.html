@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plant Watering Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Libraries -->
+    <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <h1>🌱 Automated Plant Watering Dashboard</h1>
+
+    <div class="gauges">
+        <div>
+            <h3>Soil Moisture</h3>
+            <canvas id="soilGauge" width="220" height="220"></canvas>
+        </div>
+
+        <div>
+            <h3>Tank Level</h3>
+            <canvas id="tankGauge" width="220" height="220"></canvas>
+        </div>
+    </div>
+
+    <div class="pump-control">
+        <h3>Pump Control</h3>
+        <button onclick="setPump('ON')" class="onBtn">Pump ON</button>
+        <button onclick="setPump('OFF')" class="offBtn">Pump OFF</button>
+        <button onclick="setPump('AUTO')" class="autoBtn">AUTO</button>
+
+        <div class="pump-status">
+            Pump Status: <span id="pumpState">AUTO</span>
+        </div>
+    </div>
+
+    <h3>Live Graph</h3>
+    <canvas id="graph" width="600" height="200"></canvas>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

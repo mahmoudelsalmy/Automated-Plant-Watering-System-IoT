@@ -1,0 +1,45 @@
+body {
+    background: #090f1a;
+    color: #e6e6e6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    color: #4af0ff;
+}
+
+.gauges {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.pump-control {
+    margin-top: 25px;
+}
+
+.pump-control button {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.onBtn { background:#27ae60; color:white; }
+.offBtn { background:#e74c3c; color:white; }
+.autoBtn { background:#3498db; color:white; }
+
+.pump-status {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #ffd166;
+}
